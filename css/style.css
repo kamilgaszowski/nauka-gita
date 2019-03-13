@@ -1,0 +1,88 @@
+*, ::before, ::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #000000;
+	text-align: center;
+}
+
+.container {
+	max-width: 1140px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.titles {
+	position: relative;
+}
+.titles h1 {
+	margin: 20px 0 0 0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 44px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.titles h2 {
+	margin: 0 0 20px 0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	font-style: italic;
+	color: #bdc3c7;
+}
+
+.titles::after {
+	position: absolute;
+	content: '';
+	width: 420px;
+	height: 122px;
+	background: #e74c3c;
+	border: 1px solid #ffffff;
+	box-shadow: 2px 2px #e74c3c;
+	border-radius: 5px;
+	left: 50%;
+	bottom: -10px;
+	transform: translateX(-50%);
+	z-index: -1;
+}
+
+.poem {
+	position: relative;
+	margin: 20px 0 0 0;
+}
+
+.poem::after {
+	position: absolute;
+	content: '';
+	width: 120px;
+	height: 3px;
+	background: #2980b9;
+	left: 50%;
+	bottom: -12px;
+	transform: translateX(-50%);
+}
+
+.poem p {
+	margin: 0;
+}
+
+.end p {
+	margin: 50px 0;
+	font-family: 'Raleway' sans-serif;
+	font-size: 12px;
+	font-style: italic;
+}
+
+
+
+
+
+
+
+
